@@ -1,7 +1,7 @@
 # Online Payment Fraud Exploratory Data Analysis 
 
 
-![HDB](./pictures/cover.jpg "HDB")
+![HDB](./pictures/fraud1.jpg "HDB")
 
 ## Project Overview
 
@@ -10,7 +10,7 @@ A Portuguese bank has recently run a campaign to attempt to sell a new product t
 ## Table of Contents
 1. [Problem Definition](#problem-definition)
 2. [Data Collection](#data-collection)
-3. [Exploratory Data Analysis](#exploration-data-analysis)
+3. [Exploratory Data Analysis](#exploratory-data-analysis)
 4. [Conclusions](#conclusions)
 
 ## Problem Definition
@@ -54,19 +54,20 @@ A Portuguese bank has recently run a campaign to attempt to sell a new product t
 
    Yes, all 16 transactions flagged as fraud are indeed fraudulent
 
-   ![distribution](./pictures/Q5.png "distribution")
+   ![distribution](./pictures/Q6.png "distribution")
   
 8. What is the amount range for fraudulent transactions?
    
-   Fraudulent transaction amounts range from ₹1.3 lakh to ₹3.6 lakh, with the highest frequency occurring in the ₹3.4 lakh to ₹3.6 lakh range.
+   Fraudulent transaction amounts range from $4,500 to $360,000, with the highest frequency occurring in the $340,000 to $360,000 range.
 
    ![distribution](./pictures/Q5.png "distribution")
 
 
 ## Conclusions
 
-Both models perform better than baseline. However, model 1 has higher accuracy and ‘True Positive’ cases than Model 2. In other words, Model 1 can correctly label a true subscriber to be a subscriber.
+- A significant number of records have been incorrectly flagged as '0'. This misclassification could have a major impact in the future if not addressed properly, as it may lead to an inflated online payment fraud percentage, especially given the growing reliance on online payments.
 
-Further analysis should be done on ‘False Negative’ cases as this group of customers are subscribers, however, they were predicted wrongly by the model. ‘False positive’ cases can be ignored as these customers are non-subscribers.
+- Fraudsters typically target amounts ranging from $340,000 to $360,000, which represents a substantial sum. Their focus is primarily on 'cashout' and 'transfer' modes. Interestingly, fraud is much less likely to occur during 'payment' mode transfers, despite the increasing use of online payments.
+
 
 
