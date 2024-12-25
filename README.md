@@ -5,17 +5,17 @@
 
 ## Project Overview
 
-A Portuguese bank has recently run a campaign to attempt to sell a new product to customers over the phone. The product is a term deposit, where customers deposit their money for a fixed period of time for a fixed interest rate. They want to analyze the results of this campaign to understand what makes customers likely to buy this particular product.The CEO has requested the data analytics team to explore the data and use machine learning to build a model to predict whether a customer is likely to buy.
+As online transactions continue to grow in popularity, so does the prevalence of fraudulent activities. The data analytics team of SPREE!, an E-commerce company has been tasked with analyzing a dataset of online payment fraud to uncover key insights, identify emerging patterns, and develop strategies to detect and prevent fraudulent transactions more effectively.
 
 ## Table of Contents
 1. [Problem Definition](#problem-definition)
 2. [Data Collection](#data-collection)
 3. [Exploratory Data Analysis](#exploratory-data-analysis)
-4. [Conclusions](#conclusions)
+4. [Key Insights](#key-insights)
 
 ## Problem Definition
 - Problem Statement
-  - Develop predictive model using KNN classification to predict whether a customer will purchase a banking product marketed over the phone.
+  - Conduct exploratory data analysis of online payment transaction dataset and provide insights to key stakeholders.
 
 
 ## Data Collection
@@ -63,11 +63,11 @@ A Portuguese bank has recently run a campaign to attempt to sell a new product t
    ![distribution](./pictures/Q5.png "distribution")
 
 
-## Conclusions
+## Key Insights
 
 - A significant number of records have been incorrectly flagged as '0'. This misclassification could have a major impact in the future if not addressed properly, as it may lead to an inflated online payment fraud percentage, especially given the growing reliance on online payments.
 
-- Fraudsters typically target amounts ranging from $340,000 to $360,000, which represents a substantial sum. Their focus is primarily on 'cashout' and 'transfer' modes. Interestingly, fraud is much less likely to occur during 'payment' mode transfers, despite the increasing use of online payments.
+- Fraudsters typically target amounts ranging from $340,000 to $360,000, which represents top 10 percentile of transaction amount. Their focus is primarily on 'cashout' and 'transfer' modes. Interestingly, fraud is much less likely to occur during 'payment' mode transfers, despite the increasing use of online payments.
 
 
 
